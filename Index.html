@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timo Plath</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #1e1e1e;
+            color: #ddd;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #121212;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-style: italic;
+            color: #aaa;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+        }
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #333;
+        }
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #444;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #121212;
+            color: #888;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            border: 1px solid #444;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #ddd;
+        }
+        .button:hover {
+            background-color: #333;
+        }
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .profile-pic {
+            flex: 0 0 auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #444;
+        }
+        .about-text {
+            flex: 2;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Timo Plath</h1>
+    <p>Engineer | Computational Scientist | Applied Mathematician | Particle Technologist</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#software">Software</a>
+    <a href="#publications">Publications</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About</h2>
+    <div class="about-container">
+        <img src="ProfilePhoto.jpg" alt="Dr. Timo Plath" class="profile-pic">
+        <div class="about-text">
+            <p>Postdoctoral researcher at University of Twente/University of Münster and Scientific Software Developer,
+                holding a PhD on Virtual Prototyping of Wet Granulation Processes, specialising in speeding up multiscale
+                simulations with complex physics by leveraging reduced order modelling, machine learning and a curious mind.</p>
+        </div>
+    </div>
+</section>
+
+<section id="research">
+    <h2>Research</h2>
+    <ul>
+        <li>Model Order Reduction for the Discrete Particle Method <a href="https://ris.utwente.nl/ws/portalfiles/portal/471512441/MoreThanDPM_ESCO2024.pdf" class="button">MORe than DEM</a></li>
+        <li>Virtual Prototyping of Particulate Processes<a href="https://www.nwo.nl/projecten/16604-0" class="button">ViPr</a></li>
+        <li>Digital Twins for Additive Manufacturing of Concrete <a href="https://www.nwo.nl/en/projects/21218" class="button">SMATTER</a></li>
+    </ul>
+</section>
+
+<section id="software">
+    <h2>Software</h2>
+    <ul>
+        <li><strong><a href="www.mercurydpm.org/" class="button">MercuryDPM</a></strong> Open-source discrete particle simulation for granular materials – Lead developer </li>
+        <li><strong><a href="https://bitbucket.org/mercurydpm/mercurypbm/src/master/" class="button">MercuryPBM</a></strong> Open-source population balance modelling for granular materials – Inventor and lead developer</li>
+        <li>Contributions to <a href="https://pymor.org/" class="button">pyMOR</a> and <a href="https://oomph-lib.github.io/oomph-lib/doc/html/" class="button">oomph-lib</a></li>
+    </ul>
+</section>
+
+<section id="publications">
+    <h2>Publications</h2>
+    <ul>
+        <li>Plath, T., Weinhart, T., Thornton, A. R. (2025), Model order reduction for discrete particle systems, in preparation.</li>
+        <li>Plath, T., Weinhart, T., Tunuguntla, D. R., Thornton, A. R. (2025), Comparing and contrasting Bayesian- and ML-based calibration methods for granular materials, in preparation.</li>
+        <li>Plath, T., Luding, S., Weinhart, T. (2025), Population balance modelling and reconstruction by quadrature method of moments for wet granulation, Powder Technology, 449(1), 120374, <a href="https://doi.org/10.1016/j.powtec.2024.120374">DOI</a>. <small><a href="https://doi.org/10.4121/f5cfe2b8-2896-433a-887e-45c397d64ade">Dataset</a></small></li>
+        <li>Plath et al. (2024), Rapid Prototyping of a Twin-Screw Granulator for lab-scale research, Pharmaceutical Development and Technology, submitted. <small><a href="https://doi.org/10.4121/4bfdbdc1-7b23-4fc0-82e0-b0956308a341">Dataset</a></small></li>
+        <li>Plath, T., Luding, S., Weinhart, T. (2023), Non-dimensionalisation of quadrature method of moments for wet granulation, Powder Technology 437(1), 119490, <a href="https://doi.org/10.1016/j.powtec.2024.119490">DOI</a>. <small><a href="https://doi.org/10.4121/22093397">Dataset</a></small></li>
+        <li>Thornton, A. R., Plath, T., Götz, H., et al. (2023), Recent Advances in MercuryDPM, Mathematics in Computer Science, 17(2), <a href="https://doi.org/10.1007/s11786-023-00562-x">DOI</a>.</li>
+        <li>Plath, T., Korte, C., Sivanesapillai, R., Weinhart, T. (2021), Parametric Study of Residence Time Distributions and Granulation Kinetics as a Basis for Process Modeling of Twin-Screw Wet Granulation, Pharmaceutics, 13(5), <a href="https://doi.org/10.3390/pharmaceutics13050645">DOI</a>. <small><a href="https://doi.org/10.4121/14248433">Dataset</a></small></li>
+        <li>Ostanin, I., Angelidakis, V., Plath, T. et al. (2024), Rigid Clumps in the MercuryDPM Particle Dynamics Code, Computer Physics Communication Volume 296, 109034, <a href="https://doi.org/10.1016/j.cpc.2023.109034">DOI</a>.</li>
+    </ul>
+</section>
+
+<section id="teaching">
+    <h2>Teaching & Supervision</h2>
+    <ul>
+        <li>Teacher for Programming in Engineering: C++ & Python, and Advanced Programming: Arduino</li>
+        <li>Supervision of 1 BSc student and 9 pre-master students</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:t.plath@utwente.nl" class="button">t.plath@utwente.nl</a></p>
+    <p> <a href="CV_Plath.pdf" class="button">Curriculum Vitae</a></p>
+    <p>
+        <a href="https://www.linkedin.com/in/timo-plath" class="button">LinkedIn</a>
+        <a href="https://github.com/TiPlath" class="button">GitHub</a>
+        <a href="https://orcid.org/0000-0003-2854-2592" class="button">ORCID</a>
+    </p>
+</section>
+
+<footer>
+    &copy; 2025 Timo Plath
+</footer>
+
+
+
+<!-- Next steps:
+1. integrate with Hugo for automatic publication updates
